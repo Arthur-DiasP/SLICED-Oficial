@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; /* Fundo branco */
+    font-family: Arial, sans-serif;
+    color: #333; /* Cor do texto escura */
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    background: #f5f5f5; /* Branco mais escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555; /* Cor do título um pouco mais escura */
+}
+
+.countdown {
+    font-size: 48px;
+    font-weight: bold;
+    color: #00c599; /* Cor laranja para o contador */
+}

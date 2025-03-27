@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-cliente.css"> <!-- CSS específico -->
+    <!-- Google Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Header com Menu e Logo -->
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <img src="LOGO-SLICED.png" alt="Logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+       <!-- Section-1 (Dashboard) -->
+<section id="section-1" class="active">
+  <h1>Dashboard</h1>
+  <div class="cards">
+    <!-- Card 1 (Receita Total) -->
+    <div class="card">
+      <h3>Receita Total</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 2 (Clientes Ativos) -->
+    <div class="card">
+      <h3>Usuários Ativos</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 3 (Comissões) -->
+    <div class="card">
+      <h3>Comissões</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 4 (Metas) -->
+    <div class="card">
+      <h3>Jogo</h3>
+      <p>Status: Ativo</p>
+    </div>
+    <!-- Card 5 (Metas) -->
+    <div class="card">
+      <h3>Faturamento de hoje</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 6 (Metas) -->
+    <div class="card">
+      <h3>Faturamento da rodada atual</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 7 (Afiliado Gold) -->
+    <div class="card full-width">
+      <h3>Metas</h3>
+      <span>Meta 1</span>
+      <span>Meta 2</span>
+      <span>Meta 3</span>
+    </div>
+  </div>
+</section>
+
+       <!-- Section-2 (Materiais de Divulgação) -->
+<section id="section-2">
+  <h1>Materiais de Divulgação</h1>
+  <div class="cards">
+    <!-- Card 1 (Banners) -->
+    <div class="card">
+      <h3>Banners</h3>
+      <img src="banner-exemplo.jpg" alt="Banner de Exemplo" style="width: 100%; border-radius: 4px;">
+    </div>
+    <!-- Card 2 (Vídeos) -->
+    <div class="card">
+      <h3>Vídeos</h3>
+      <video controls style="width: 100%; border-radius: 4px;">
+        <source src="video-exemplo.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+    <!-- Card 3 (Criar Materiais +) -->
+    <div class="card full-width">
+      <h3>Criar Materiais +</h3>
+      <p>Adicionar novos materiais de divulgação.</p>
+    </div>
+  </div>
+</section>
+
+        <!-- Section-3 (Sócios) -->
+<section id="section-3">
+  <h1>Sócios</h1>
+  <div class="cards">
+    <!-- Card 1 (Total de Sócios) -->
+    <div class="card">
+      <h3>Total de Sócios</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 2 (Comissões) -->
+    <div class="card">
+      <h3>Comissões</h3>
+      <p>10% por dia</p>
+    </div>
+    <!-- Card 3 (Banner Estratégia) -->
+    <div class="card">
+      <h3>Banner Estratégia</h3>
+      <img src="banner-estrategia.jpg" alt="Banner Estratégia" style="width: 100%; border-radius: 4px;">
+    </div>
+    <!-- Card 4 (Mostrar Estratégia, Bônus) -->
+    <div class="card">
+      <h3>Mostrar Estratégia</h3>
+      <span class="bonus">Bônus</span>
+    </div>
+    <!-- Card 5 (Gráfico de Sócios) -->
+    <div class="card full-width">
+      <h3>Gráfico de Sócios</h3>
+      <div class="grafico">
+        <div class="barra" style="height: 50px;"></div>
+        <div class="barra" style="height: 80px;"></div>
+        <div class="barra" style="height: 60px;"></div>
+        <div class="barra" style="height: 90px;"></div>
+        <div class="barra" style="height: 70px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Section-4 (Link de Afiliado) -->
+<section id="section-4">
+  <h1>Link de Afiliado</h1>
+  <div class="cards">
+    <!-- Card 1 (Seu Link) -->
+    <div class="card">
+      <h3>Seu Link</h3>
+      <input type="text" value="https://exemplo.com/link" readonly>
+      <button>Copiar</button>
+    </div>
+    <!-- Card 2 (Total Afiliados) -->
+    <div class="card">
+      <h3>Total Afiliados</h3>
+      <h4>0</h4>
+    </div>
+    <!-- Card 3 (Comissões) -->
+    <div class="card">
+      <h3>Comissões</h3>
+      <p>10% por dia</p>
+    </div>
+    <!-- Card 4 (Banner Estratégias) -->
+    <div class="card">
+      <h3>Banner Estratégias</h3>
+      <img src="banner-estrategias.jpg" alt="Banner Estratégias" style="width: 100%; border-radius: 4px;">
+    </div>
+    <!-- Card 5 (Mostrar Estratégias, Bônus) -->
+    <div class="card">
+      <h3>Mostrar Estratégias</h3>
+      <span class="bonus">Bônus</span>
+    </div>
+    <!-- Card 6 (Bônus Master) -->
+    <div class="card">
+      <h3>Bônus Master</h3>
+      <p>Benefícios exclusivos para afiliados master.</p>
+    </div>
+    <!-- Card 7 (Gráfico de Cliques) -->
+    <div class="card full-width">
+      <h3>Gráfico de Cliques</h3>
+      <div class="grafico">
+        <div class="barra" style="height: 50px;"></div>
+        <div class="barra" style="height: 80px;"></div>
+        <div class="barra" style="height: 60px;"></div>
+        <div class="barra" style="height: 90px;"></div>
+        <div class="barra" style="height: 70px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Section-5 (WhatsApp) -->
+ <section id="section-5">
+   <div class="cards-whatsapp">
+     <!-- Card 1 -->
+     <a href="https://link-do-grupo-todos.com" target="_blank" class="card">
+       <h3>Grupo de Todos</h3>
+     </a>
+     <!-- Card 2 -->
+     <a href="https://link-materiais-divulgacao.com" target="_blank" class="card">
+       <h3>Materiais de Divulgação</h3>
+     </a>
+     <!-- Card 3 -->
+     <a href="https://link-financeiro-suporte.com" target="_blank" class="card">
+       <h3>Financeiro e Suporte</h3>
+     </a>
+   </div>
+ </section>
+ 
+ <!-- Section-6 (Dados Cliente) -->
+<section id="section-6">
+  <h1>Dados Pessoais</h1>
+  <div class="cards">
+    <!-- Card 1 (Link de Jogo) -->
+    <div class="card">
+      <h3>Link do Jogo</h3>
+      <input type="text" value="https://exemplo.com/link" readonly>
+      <button>Copiar</button>
+    </div>
+    <!-- Card 2 (Meus Dados) -->
+<div class="card">
+  <h3>Meus Dados</h3>
+  <div id="meus-dados" style="text-align: left;">
+    <!-- Os dados serão preenchidos aqui via JavaScript -->
+  </div>
+</div>
+
+    <!-- Card 3 (Ser Sócio, Bônus) -->
+    <div class="card">
+      <h3>Ser Sócio</h3>
+      <span class="bonus">Bônus</span>
+    </div>
+    <!-- Card 4 (Pagamentos) -->
+    <div class="card">
+      <h3>Pagamentos</h3>
+      <p>Tudo sobre seus pagamentos</p>
+    </div>
+    
+    <!-- Card 5 (Gráfico de Cliques) -->
+    <div class="card full-width">
+      <h3>Gráfico de Cliques</h3>
+      <div class="grafico">
+        <div class="barra" style="height: 50px;"></div>
+        <div class="barra" style="height: 80px;"></div>
+        <div class="barra" style="height: 60px;"></div>
+        <div class="barra" style="height: 90px;"></div>
+        <div class="barra" style="height: 70px;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+    <!-- Navbar Fixo com 5 ícones -->
+    <nav class="navbar">
+        <div class="icon" data-section="section-1">
+            <span class="material-icons">dashboard</span>
+        </div>
+        <div class="icon" data-section="section-2">
+            <span class="material-icons">campaign</span> <!-- Ícone de divulgação -->
+        </div>
+        <div class="icon" data-section="section-3">
+            <span class="material-icons">person</span> <!-- Ícone de sócio -->
+        </div>
+        <div class="icon" data-section="section-4">
+            <span class="material-icons">link</span> <!-- Ícone de link -->
+        </div>
+        <div class="icon" data-section="section-5">
+            <img src="Whatsapp.png" alt="WhatsApp">
+        </div>
+        <div class="icon" data-section="section-6">
+            <span class="material-icons">home</span> <!-- Ícone de casa -->
+        </div>
+        <div class="icon" data-section="section-7">
+            <span class="material-icons">sports_esports</span> <!-- Ícone de jogo -->
+        </div>
+    </nav>
+
+    <script src="dashboard-socio.js"></script> <!-- Usando o mesmo JavaScript -->
+    <script>
+  // Importações do Firebase Modular SDK
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+  
+  // Configuração do Firebase
+  const firebaseConfig = {
+    apiKey: "AIzaSyBdetp7jRbqaL5B2iaFOjSSI_nUH_U0f6U",
+    authDomain: "arthur-37ccf.firebaseapp.com",
+    databaseURL: "https://arthur-37ccf-default-rtdb.firebaseio.com",
+    projectId: "arthur-37ccf",
+    storageBucket: "arthur-37ccf.firebasestorage.app",
+    messagingSenderId: "633486950077",
+    appId: "1:633486950077:web:70b39f855f01c4c721c1d4",
+    measurementId: "G-HCRPH08DN2"
+  };
+  
+  // Inicialize o Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  
+  // Função para verificar se o usuário está logado
+  function verificarLogin() {
+    const usuarioEmail = localStorage.getItem("usuarioEmail"); // Assumindo que o email foi salvo no localStorage
+    
+    if (!usuarioEmail) {
+      console.log("Usuário não autenticado!");
+      return null;
+    }
+    return usuarioEmail;
+  }
+  
+  // Função para buscar dados do usuário no Firestore
+  async function buscarDadosUsuario(usuarioEmail) {
+    try {
+      const userRef = doc(db, "users-clientes", usuarioEmail); // Refere-se ao documento do usuário no Firestore
+      const userSnap = await getDoc(userRef);
+      
+      if (userSnap.exists()) {
+        const userData = userSnap.data();
+        // Preencher os dados do usuário na página
+        exibirDadosUsuario(userData);
+      } else {
+        console.log("Usuário não encontrado no Firestore");
+      }
+    } catch (error) {
+      console.error("Erro ao buscar dados do usuário:", error);
+    }
+  }
+  
+  // Função para exibir os dados do usuário no card "Meus Dados"
+  function exibirDadosUsuario(userData) {
+    const cardMeusDados = document.getElementById("meus-dados");
+    
+    // Preencher os dados do usuário no card
+    cardMeusDados.innerHTML = `
+        <p><strong>Nome:</strong> ${userData.name || 'Não disponível'}</p>
+        <p><strong>Email:</strong> ${userData.email || 'Não disponível'}</p>
+        <p><strong>Telefone:</strong> ${userData.phone || 'Não disponível'}</p>
+        <p><strong>CPF:</strong> ${userData.cpf || 'Não disponível'}</p>
+        <p><strong>Redes Sociais:</strong> ${userData.socialMedia || 'Não disponível'}</p>
+      `;
+  }
+  
+  // Função para inicializar o processo quando a página carregar
+  document.addEventListener('DOMContentLoaded', function() {
+    const usuarioEmail = verificarLogin();
+    if (usuarioEmail) {
+      buscarDadosUsuario(usuarioEmail); // Buscar dados do usuário no Firestore
+    }
+  });
+</script>
+</body>
+</html>

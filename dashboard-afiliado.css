@@ -1,0 +1,441 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header e Menu */
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Layout padrão para cards (2 colunas) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    text-align: right;
+    font-size: 24px;
+    color: #333;
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Navbar Fixo */
+.navbar {
+    position: fixed;
+    bottom: 10px; /* Posicionado 10px acima da borda inferior */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
+    width: 65%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza os ícones verticalmente */
+    padding: 10px 0;
+    border-radius: 25px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.navbar .icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .icon img {
+    max-width: 24px;
+}
+
+/* Estilo do ícone ativo */
+.navbar .icon.active {
+    background-color: #00c599; /* Cor de fundo */
+    border-radius: 50%; /* Borda totalmente arredondada */
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Esconder Sections */
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Cards com largura de 2 colunas */
+.card.full-width {
+    grid-column: span 2; /* Ocupa 2 colunas */
+}
+
+/* Gráfico */
+.grafico {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-end; /* Alinha as barras na base */
+    gap: 20px; /* Espaço entre as barras */
+    margin-top: 20px;
+    height: 200px; /* Altura fixa para o gráfico */
+}
+
+.barra {
+    width: 20px;
+    background-color: #00c599;
+    border-radius: 4px;
+}
+
+/* Estilo para imagens e vídeos nos cards */
+.card img, .card video {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Aumentar o height da section 1 */
+#section-1 {
+    padding-bottom: 100px; /* Espaço extra para evitar que o navbar tampe o conteúdo */
+}
+
+/* Estilo para o card "Afiliado Gold" */
+#section-1 .card.full-width {
+    grid-column: span 2; /* Ocupa 2 colunas */
+    background-color: #f9f9f9; /* Cor de fundo diferente */
+    border: 1px solid #ddd; /* Borda sutil */
+}
+
+#section-1 .card.full-width h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#section-1 .card.full-width p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Estilo específico para o card "Criar Materiais +" */
+#section-2 .card.full-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#section-2 .card.full-width h3 {
+    margin-bottom: 10px;
+}
+
+#section-2 .card.full-width p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* Aumentar o height das sections 3 e 4 */
+#section-3, #section-4 {
+    padding-bottom: 100px; /* Espaço extra para evitar que o navbar tampe o conteúdo */
+}
+
+/* Estilo para o card de Comissões */
+#section-3 .card p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Estilo para o card "Mostrar Estratégia, Bônus" */
+#section-3 .card .bonus {
+    display: block;
+    text-align: left; /* Alinhado à esquerda */
+    font-size: 14px;
+    color: #00c599;
+    margin-top: 10px;
+}
+
+/* Estilo para imagens nos cards */
+#section-3 .card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+
+
+/* Estilo específico para a section-4 (Link de Afiliado) */
+#section-4 .card input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    cursor: not-allowed; /* Mostra que o input não é editável */
+}
+
+#section-4 .card button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #00c599; /* Cor verde */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#section-4 .card button:hover {
+    background-color: #00a67d; /* Cor verde mais escura no hover */
+}
+
+
+/* Estilo para o card de Comissões */
+#section-4 .card p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilo para o card "Mostrar Estratégias, Bônus" */
+#section-4 .card .bonus {
+    display: block;
+    text-align: left; /* Alinhado à esquerda */
+    font-size: 14px;
+    color: #00c599;
+    margin-top: 10px;
+}
+
+/* Estilo para imagens nos cards */
+#section-4 .card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Estilo para o card "Bônus Master" */
+#section-4 .card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* Estilo específico para a section-8 (WhatsApp) */
+#section-5 {
+    padding-bottom: 100px; /* Aumenta o height da section para evitar que o navbar tampe o conteúdo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+#section-5 .cards-whatsapp {
+    display: flex;
+    flex-direction: column; /* Alinha os cards verticalmente */
+    align-items: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaço entre os cards */
+    max-width: 400px; /* Largura máxima para os cards */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+#section-5 .card {
+    width: 100%; /* Ocupa 100% da largura do container */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto padrão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
+
+#section-5 .card:hover {
+    transform: translateY(-5px); /* Efeito de levantar o card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+}
+
+#section-8 .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* Media Query para max-width: 358px */
+@media screen and (max-width: 358px) {
+  #section-1, #section-2 {
+    padding-bottom: 100px; /* Aumenta o height da section para evitar que o navbar tampe o conteúdo */
+    
+  }
+  
+  /* Navbar Fixo */
+.navbar {
+    position: fixed;
+    bottom: 10px; /* Posicionado 10px acima da borda inferior */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
+    width: 90%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza os ícones verticalmente */
+    padding: 10px 0;
+    border-radius: 25px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.navbar .icon {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .icon img {
+    max-width: 22px;
+}
+
+}
+
+
+
+/* Media Query para max-width: 380px */
+@media screen and (min-width:359px) and (max-width: 380px){
+  /* Navbar Fixo */
+.navbar {
+    position: fixed;
+    bottom: 10px; /* Posicionado 10px acima da borda inferior */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
+    width: 90%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza os ícones verticalmente */
+    padding: 10px 0;
+    border-radius: 25px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.navbar .icon {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .icon img {
+    max-width: 24px;
+}
+
+}
+
+
+/* Media Query para max-width: 381px até 440px */
+@media screen and (min-width: 381px) and (max-width: 440px){
+  /* Navbar Fixo */
+.navbar {
+    position: fixed;
+    bottom: 10px; /* Posicionado 10px acima da borda inferior */
+    left: 50%; /* Centralizado horizontalmente */
+    transform: translateX(-50%); /* Ajuste fino para centralização */
+    width: 90%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza os ícones verticalmente */
+    padding: 10px 0;
+    border-radius: 25px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.navbar .icon {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .icon img {
+    max-width: 24px;
+}
+
+}

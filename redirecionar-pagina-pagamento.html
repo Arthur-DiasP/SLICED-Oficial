@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionando para Pagamento</title>
+    <link rel="stylesheet" href="redirecionar-pagina-pagamento.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Redirecionando para a página de pagamento...</h1>
+        <div class="countdown">3</div>
+    </div>
+
+    <script>
+        let countdownElement = document.querySelector('.countdown');
+        let countdown = 3;
+
+        function updateCountdown() {
+            countdownElement.textContent = countdown;
+            if (countdown === 0) {
+                window.location.href = 'pagamento-sociedade.html';
+            } else {
+                countdown--;
+                setTimeout(updateCountdown, 1000);
+            }
+        }
+
+        updateCountdown();
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento de Sociedade</title>
+    <link rel="stylesheet" href="pagamento-sociedade.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pagamento</h1>
+        <h2>R$1.000,00</h2>
+        <img src="qr-code-sociedade-sliced.jpg" alt="QR Code">
+        <div class="input-container">
+            <input type="text" id="codigo" value="00020126780014BR.GOV.BCB.PIX0136fe550070-fff7-4b39-bc8b-dad664dc48a50216SOCIEDADE SLICED52040000530398654071000.005802BR5919Arthur Dias Pereira6009SAO PAULO62140510G07eqP3PQI63044175" readonly>
+            <button onclick="copiarCodigo()">Copiar</button>
+        </div>
+    </div>
+
+    <script>
+        function copiarCodigo() {
+            const codigo = document.getElementById('codigo');
+            codigo.select();
+            codigo.setSelectionRange(0, 99999); // Para dispositivos móveis
+            document.execCommand('copy');
+            alert('Código copiado: ' + codigo.value);
+        }
+    </script>
+</body>
+</html>

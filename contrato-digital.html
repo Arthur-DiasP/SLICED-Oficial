@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato Digital</title>
+    <link rel="stylesheet" href="contrato-digital.css">
+    <!-- Biblioteca Signature Pad -->
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+</head>
+<body>
+    <h1>Contrato Digital</h1>
+    <div class="container">
+        <div class="clausula">
+            <p><strong>Cláusula 1:</strong> O sócio concorda em não divulgar qualquer informação confidencial da Sliced, exceto para fins lucrativos que beneficiem a Sliced e seus colaboradores.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 2:</strong> O sócio terá direito a 5% dos lucros da Sliced, mediante o pagamento de R$1.000,00 via PIX, em uma única parcela.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 3:</strong> O sócio se compromete a ajudar em ideias, criação de estratégias, participação em reuniões e outras atividades relacionadas ao negócio.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 4:</strong> Apenas Arthur Dias Pereira tem o direito de comprar a parte do sócio (5% da Sliced) pelo valor que o sócio pagou inicialmente (R$1.000,00), após 3 meses da compra inicial.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 5:</strong> O sócio concorda em cumprir todas as normas e regulamentos internos da Sliced, bem como respeitar as decisões tomadas pela diretoria.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 6:</strong> O sócio não poderá transferir sua participação na Sliced para terceiros sem a aprovação por escrito da diretoria.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 7:</strong> Em caso de rescisão do contrato, o sócio terá direito apenas ao valor proporcional de sua participação, descontadas as despesas administrativas.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 8:</strong> O sócio se compromete a manter sigilo sobre todas as informações estratégicas da Sliced, mesmo após o término do contrato.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 9:</strong> O sócio terá direito a participar de todas as reuniões de planejamento estratégico da Sliced.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 10:</strong> O sócio poderá sugerir novos projetos e iniciativas, que serão avaliadas pela diretoria antes de serem implementadas.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 11:</strong> O sócio concorda em não concorrer diretamente com a Sliced durante a vigência do contrato.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 12:</strong> O sócio terá acesso a relatórios financeiros trimestrais da Sliced para acompanhamento de sua participação nos lucros.</p>
+        </div>
+        <div class="clausula">
+            <p><strong>Cláusula 13:</strong> O sócio concorda em não utilizar o nome ou marca da Sliced para fins pessoais sem autorização prévia.</p>
+        </div>
+        <div class="assinatura">
+            <label for="assinatura">Assinatura Virtual:</label>
+            <canvas id="assinaturaCanvas"></canvas>
+            <button id="limparAssinatura">Limpar Assinatura</button>
+        </div>
+    </div>
+    <div class="confirmacao">
+        <label>
+            <input type="checkbox" id="confirmarLeitura"> Eu li e compreendo todos os termos e condições deste contrato.
+        </label>
+        <div class="button-container">
+            <button id="confirmarButton">Confirmar</button>
+        </div>
+    </div>
+
+    <script>
+        // Configuração do Signature Pad
+        const canvas = document.getElementById('assinaturaCanvas');
+        const signaturePad = new SignaturePad(canvas, {
+            backgroundColor: 'rgb(255, 255, 255)', // Fundo branco
+            penColor: 'rgb(0, 0, 0)' // Cor da caneta preta
+        });
+
+        // Botão para limpar a assinatura
+        document.getElementById('limparAssinatura').addEventListener('click', () => {
+            signaturePad.clear();
+        });
+
+        // Botão de confirmar
+        document.getElementById('confirmarButton').addEventListener('click', () => {
+            const assinaturaValida = !signaturePad.isEmpty();
+            const leituraConfirmada = document.getElementById('confirmarLeitura').checked;
+
+            if (assinaturaValida && leituraConfirmada) {
+                // Redireciona para a página de pagamento
+                window.location.href = 'redirecionar-pagina-pagamento.html';
+            } else {
+                alert('Por favor, assine o contrato e confirme a leitura.');
+            }
+        });
+    </script>
+</body>
+</html>
